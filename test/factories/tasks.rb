@@ -4,7 +4,7 @@ FactoryBot.define do
     description
     author_id { 1 }
     assignee_id { 2 }
-    state
+    state { '' }
     expired_at { Time.now + 1.week }
   end
 end

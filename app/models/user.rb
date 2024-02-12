@@ -6,5 +6,5 @@ class User < ApplicationRecord
   validates :first_name, :last_name, :email, presence: true
   validates :first_name, :last_name, length: { minimum: 2 }
   validates :email, uniqueness: true
-  validates :email, format: { with: /\A\S+@\S+\.\S+\z/, message: I18n.t('activerecord.errors.models.user.attributes.email.format') }
+  validates :email, format: { with: /\A\S+@\S+\.\S+\z/ }
 end

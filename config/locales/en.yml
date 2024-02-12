@@ -5,4 +5,4 @@ en:
         user:
           attributes:
             email:
-              format: 'Email must contains @'
+              message: "email must contains @"
